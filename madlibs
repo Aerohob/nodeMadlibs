@@ -1,0 +1,11 @@
+// Get http module
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+    console.log('Yes')
+    res.write('Does it work?');
+    res.end();
+    // You can just say res.end('it works')
+});
+
+server.listen(3000)
